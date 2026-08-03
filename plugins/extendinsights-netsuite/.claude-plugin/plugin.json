@@ -1,0 +1,16 @@
+{
+  "name": "extendinsights-netsuite",
+  "displayName": "ExtendInsights for NetSuite",
+  "description": "Claude skills for ExtendInsights Financial Reporting (XAVI) on NetSuite — build NetSuite-connected financial reports directly in Excel.",
+  "version": "1.0.0",
+  "author": {
+    "name": "CloudExtend",
+    "email": "cloudextend-support@celigo.com",
+    "url": "https://www.cloudextend.io"
+  },
+  "homepage": "https://support.cloudextend.io/extendinsights/en/articles/16056782-xavi-report-builder-ai-powered-financial-reports-with-claude",
+  "repository": "https://github.com/cloudextend/ai-skills",
+  "license": "LicenseRef-CloudExtend-Proprietary",
+  "keywords": ["netsuite", "finance", "excel", "financial-reporting", "xavi", "extendinsights"],
+  "category": "finance"
+}
