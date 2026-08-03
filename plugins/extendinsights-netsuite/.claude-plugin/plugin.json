@@ -11,6 +11,5 @@
   "homepage": "https://support.cloudextend.io/extendinsights/en/articles/16056782-xavi-report-builder-ai-powered-financial-reports-with-claude",
   "repository": "https://github.com/cloudextend/ai-skills",
   "license": "LicenseRef-CloudExtend-Proprietary",
-  "keywords": ["netsuite", "finance", "excel", "financial-reporting", "xavi", "extendinsights"],
-  "category": "finance"
+  "keywords": ["netsuite", "finance", "excel", "financial-reporting", "xavi", "extendinsights"]
 }
