@@ -2,7 +2,7 @@
   "name": "cloudextend",
   "description": "Official Claude skills for CloudExtend products — one plugin per ExtendInsights connector.",
   "owner": {
-    "name": "CloudExtend",
+    "name": "CloudExtend by Celigo",
     "email": "cloudextend-support@celigo.com",
     "url": "https://www.cloudextend.io"
   },
@@ -11,13 +11,7 @@
       "name": "extendinsights-netsuite",
       "source": "./plugins/extendinsights-netsuite",
       "description": "Claude skills for ExtendInsights Financial Reporting (XAVI) on NetSuite — build NetSuite-connected financial reports directly in Excel.",
-      "version": "1.0.0",
-      "category": "finance",
-      "author": {
-        "name": "CloudExtend",
-        "email": "cloudextend-support@celigo.com",
-        "url": "https://www.cloudextend.io"
-      }
+      "category": "finance"
     }
   ]
 }
