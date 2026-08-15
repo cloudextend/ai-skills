@@ -2,24 +2,26 @@ CloudExtend AI Skills License
 
 Copyright (c) 2026 Celigo, Inc. ("CloudExtend"). All rights reserved.
 
-DRAFT — FOR REVIEW BY CELIGO LEGAL BEFORE PUBLICATION
+Claude, Anthropic, and Claude Code are trademarks of Anthropic, PBC. CloudExtend is not affiliated with, sponsored by, or endorsed by Anthropic, PBC.
+Version 1.0. Effective Aug 15, 2026. The version of this Skills License present in the repository at the time you download the Skills governs that copy.
+This Skills License is a binding agreement between Celigo, Inc. ("CloudExtend") and any person or entity that downloads, installs, accesses, or uses the Skills ("you"). By downloading, installing, accessing, or using the Skills, you accept this Skills License and the Celigo Terms of Service executed between you and Celigo (or if you have not executed such an agreement, the terms at https://www.celigo.com/terms-of-service/) (the “Agreement”). If you do not accept it, do not download, install, access, or use the Skills.
 
-1. Grant. Subject to the terms below, CloudExtend grants you a limited,
+1. Grant. Subject to the terms below (the “Skills License”), CloudExtend grants you a limited,
    non-exclusive, non-transferable, revocable license to download, install,
    and use the contents of this repository (the "Skills") solely:
-   (a) through Anthropic's Claude products (including Claude.ai, Claude
-       Desktop, Claude Code, and Claude for Excel); and
+   (a) through Anthropic PBC’s products and services; and
    (b) in connection with a validly licensed CloudExtend product or
        service to which the applicable Skill relates (e.g., ExtendInsights
-       Financial Reporting).
+       Financial Reporting), for so long as that subscription or license remains active..
 
-2. Restrictions. Except as expressly permitted above, you may not:
+2. Restrictions. Except as expressly permitted above or in GitHub’s terms of service, and in addition to any prohibitions in the Agreement, you may not:
    (a) copy, redistribute, sublicense, sell, or otherwise make the Skills
        available to any third party;
    (b) modify the Skills or create derivative works from them;
    (c) use the Skills, in whole or in part, to develop, train, or improve
-       any product or service that competes with CloudExtend products; or
-   (d) remove or alter any copyright or proprietary notices.
+       any product or service that competes with CloudExtend products;
+   (d) remove or alter any copyright or proprietary notices; or
+(e) use the Skills in violation of Anthropic’s Usage Policy, the terms governing your use of Anthropic’s products, or the Agreement.
 
 3. Ownership. The Skills are licensed, not sold. CloudExtend and its
    licensors retain all right, title, and interest in and to the Skills,
@@ -35,21 +37,19 @@ DRAFT — FOR REVIEW BY CELIGO LEGAL BEFORE PUBLICATION
 5. No Warranty. THE SKILLS ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT
    WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
    WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
-   NON-INFRINGEMENT.
+   NON-INFRINGEMENT. CLOUDEXTEND DOES NOT WARRANT THAT THE SKILLS OR THEIR OUTPUT WILL BE ACCURATE, COMPLETE, ERROR-FREE, OR UNINTERRUPTED, OR THAT THE SKILLS WILL OPERATE WITH ANY PARTICULAR VERSION OF ANY THIRD-PARTY PRODUCT OR SERVICE. 
 
 6. Limitation of Liability. TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO
    EVENT WILL CLOUDEXTEND BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
    CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUE,
    DATA, OR BUSINESS OPPORTUNITY, ARISING OUT OF OR RELATED TO THE SKILLS
-   OR THEIR OUTPUT.
+   OR THEIR OUTPUT. EXCEPT WHERE PROHIBITED BY APPLICABLE LAW, IN NO EVENT SHALL CLOUDEXTEND OR ITS LICENSORS’ AGGREGATE LIABILITY RELATED TO THE SKILLS EXCEED THE GENERAL LIABILITY CAP SET FORTH IN THE AGREEMENT.
 
-7. Termination. This license terminates automatically if you breach any of
-   its terms. Upon termination you must cease use of the Skills and delete
-   all copies in your possession.
+7. Termination. This license terminates automatically upon the earlier of (a) your breach any of
+   its terms or (b) the expiration or termination of the CloudExtend subscription or license referenced in Section 1(b). Upon termination, you must cease use of the Skills and delete
+   all copies in your possession. Sections 2 through 8 survive any expiration or termination of this Skills License. 
 
-8. Governing Terms. Your use of CloudExtend products remains governed by
-   the applicable CloudExtend/Celigo subscription or service agreement. In
-   the event of a conflict between that agreement and this license with
-   respect to the Skills, that agreement controls.
+8. Governing Terms. Your use of CloudExtend products, including the Skills, remains governed by the Agreement. In the event of a conflict between the Agreement and this license with
+   respect to the Skills, this Skills License controls.
 
 For licensing questions, contact: cloudextend-support@celigo.com
