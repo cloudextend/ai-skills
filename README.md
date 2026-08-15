@@ -17,31 +17,37 @@ way, e.g. `extendinsights-hubspot`, each versioned and installed independently.
 
 ## Install
 
-**In Claude (web, Desktop, or Cowork):**
-
-1. Open the **Customize** menu → **Plugins** tab.
+**Individual users — Claude (web, Desktop, or Claude for Excel):**
+1. Open **Settings → Customize → Plugins**.
 2. Click **"+"** → **Add marketplace** → **Add from a repository**.
 3. Enter `cloudextend/ai-skills`.
-4. Install the plugin for the connector you use, e.g. **ExtendInsights for NetSuite**.
+4. Install **extendinsights-netsuite**.
 
-**In Claude Code / CLI:**
-
+**Individual users — Claude Code / CLI:**
 ```bash
 claude plugin marketplace add cloudextend/ai-skills
 claude plugin install extendinsights-netsuite@cloudextend
 ```
+Installs at user scope by default — available in all your sessions.
 
-**For Team/Enterprise Claude organizations (org-wide rollout):**
-
-An organization owner can add this repository under
-`Organization settings → Plugins → Add plugin → GitHub`, with automatic sync enabled so
-updates reach every member without a manual re-install.
+**Teams (Claude Team/Enterprise organizations):**
+An organization owner adds this repository under
+**Organization settings → Plugins → Add plugin → GitHub** with automatic
+sync enabled. All members receive the plugin and its updates — no
+individual installs needed.
 
 ## Updating
-
-Bump `"version"` in the relevant `plugin.json` on every release you want existing users to
-receive. Users with auto-sync get it within minutes of a push; everyone else gets it on their
-next `claude plugin marketplace update` / `/plugin marketplace update`.
+Bump `"version"` in the relevant `plugin.json` on every release you want users to receive.
+How updates reach users depends on the surface:
+- **Claude.ai, Desktop, and org-managed installs with auto-sync** — updates apply
+  automatically shortly after the push; no user action needed.
+- **Claude Code / CLI** — installed plugins are not upgraded by a marketplace refresh.
+  Run:
+```bash
+  claude plugin update extendinsights-netsuite@cloudextend
+```
+  (or `claude plugin uninstall` + `install` on older CLI versions). Verify with
+  `claude plugin list`.
 
 ## Repository structure
 
@@ -68,7 +74,7 @@ related to HubSpot.
 ## Adding a new connector
 
 1. Create `plugins/extendinsights-<connector>/.claude-plugin/plugin.json` (copy the NetSuite
-   one as a template, update `name`, `displayName`, `description`, `keywords`).
+   one as a template, update `name`, `description`, `keywords`).
 2. Add the skill content under `plugins/extendinsights-<connector>/skills/<skill-name>/SKILL.md`.
 3. Add a matching entry to the `plugins` array in `.claude-plugin/marketplace.json`.
 
