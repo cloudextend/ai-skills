@@ -53,14 +53,20 @@ Read only the file needed for the report at hand — never load all template fil
 >
 > Let's get started."
 
+**HARD RULE — Disclaimer is shown first.** Anytime the user is prompted to
+accept a disclaimer, the full disclaimer text MUST be shown first. Put the
+complete disclaimer in the `ask_user_input` question string, then the accept
+question, then the options. Never present "I accept" / "I do not accept"
+(or any accept/reject buttons) unless that same question string already
+contains the full disclaimer body above the question. Chat prose before the
+tool call does NOT appear in the rendered prompt — do not rely on it.
+
 **Immediately after the welcome message, present the acceptance gate using `ask_user_input`
 (single-select). Do NOT ask any report questions, build anything, or proceed in any way until
 the user explicitly selects "I accept." This gate is mandatory for every session, every report.**
 
 Acceptance question text:
-> "Before we build your report, please read and accept the following:
->
-> **AI and XAVI Formula Disclaimer**
+> "**AI and XAVI Formula Disclaimer**
 >
 > XAVI Report Builder uses AI to generate Excel formula layouts and report structures.
 > AI-generated outputs — including formula logic, account type mappings, period arguments,
@@ -573,3 +579,6 @@ start of every build.** The most critical, summarized here:
 - **Balance Sheet accounts:** omit fromPeriod (`,,`). Exclude the GL Retained Earnings
   account from TYPEBALANCE("Equity").
 - **Never mention template names** anywhere. Plain English only ("YoY Comparison").
+- **Disclaimer is shown first.** Anytime the user is prompted to accept a disclaimer,
+  the full disclaimer body must appear in the `ask_user_input` question string *before*
+  the accept question. Chat prose before the tool call is invisible in the prompt UI.
