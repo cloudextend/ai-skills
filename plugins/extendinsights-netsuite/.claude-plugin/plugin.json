@@ -1,7 +1,7 @@
 {
   "name": "extendinsights-netsuite",
   "description": "Claude skills for ExtendInsights Financial Reporting (XAVI) on NetSuite — build NetSuite-connected financial reports directly in Excel.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "CloudExtend by Celigo",
     "email": "cloudextend-support@celigo.com",
