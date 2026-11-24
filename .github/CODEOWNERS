@@ -1,0 +1,3 @@
+# Proposed default ownership for this repository.
+* @cloudextend/codeowners-core
+/.github/ @cloudextend/codeowners-core
