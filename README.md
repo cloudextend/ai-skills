@@ -30,17 +30,16 @@ claude plugin install extendinsights-netsuite@cloudextend
 ```
 Installs at user scope by default — available in all your sessions.
 
-**Teams (Claude Team/Enterprise organizations):**
-An organization owner adds this repository under
-**Organization settings → Plugins → Add plugin → GitHub** with automatic
-sync enabled. All members receive the plugin and its updates — no
-individual installs needed.
+**Teams:**
+An organization owner can distribute the plugin through the plugin controls available
+to their plan. Verify installation and update policy on the target surface; managed
+distribution does not establish that every member has received the latest version.
 
 ## Updating
 Bump `"version"` in the relevant `plugin.json` on every release you want users to receive.
 How updates reach users depends on the surface:
 - **Claude.ai, Desktop, and org-managed installs with auto-sync** — updates apply
-  automatically shortly after the push; no user action needed.
+  according to that surface’s sync policy. Verify the installed version after release.
 - **Claude Code / CLI** — installed plugins are not upgraded by a marketplace refresh.
   Run:
 ```bash
@@ -97,8 +96,18 @@ Renaming before first publish, as done here, avoids needing this.
 claude plugin validate .
 ```
 
-Checks `marketplace.json` and every plugin's `plugin.json` / `SKILL.md` frontmatter for schema
-errors, duplicate names, and path issues.
+Validate the connector separately and run the template regression checks (Node.js 22+):
+
+```bash
+claude plugin validate plugins/extendinsights-netsuite
+node --test tests/*.test.cjs
+```
+
+Manifest validation checks packaging; it does not establish formula correctness or
+agent behavior. The tests execute selected bundled JavaScript examples with a write
+capture and evaluate date/column invariants. They do not connect to Excel or NetSuite.
+Before release, exercise the scenarios in `tests/agent-scenarios.md` with the installed
+add-in and verify the generated workbook against source figures.
 
 ## Support
 

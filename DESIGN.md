@@ -6,7 +6,7 @@ router layer.
 
 ## Decided (August 2026)
 
-**Repo name:** `ai-skills`**, not** `cloudextend-plugins`**.** "Plugins" already means the
+**Repo name:** `ai-skills`. "Plugins" already means the
 signed Microsoft/Google marketplace add-ins in CloudExtend's product vocabulary.
 This repo distributes Claude skills only.
 
@@ -60,10 +60,22 @@ or existing installs break.
 - The session welcome + AI-disclaimer + "I accept" gate currently at the top of
 `xavi-report-builder/SKILL.md` (one gate, shown once, maintained in one place).
 - The source-ambiguity table (Revenue → NetSuite vs Stripe vs Chargebee, etc.).
-- XAVI's aggressive trigger description should then be softened so the router is
-the single entry point.
+- Connector selection belongs to that router. The current XAVI trigger is scoped
+  to NetSuite/XAVI and clarifies an unspecified data source.
 
 **Upload/write-back skills.** Future skills that write data INTO NetSuite/HubSpot
 are materially higher-risk than read-only reporting. When designing them (or the
 router's handling of them), require an explicit stronger confirmation posture; do
 not assume the read-only model of xavi-report-builder.
+
+## Report instruction consistency (November 2026)
+
+Shared conventions own filter addresses and the reserved helper band (rows 2–26).
+Each report owns its table below row 30. Examples may be adapted, but must satisfy
+the common formula rules. Dates use DATE month normalization across fiscal years.
+Single-month budget calls retain separate accounting-book and category arguments.
+
+Examples and static diagnostics cannot prove model behavior or the installed XAVI
+contract. Preserve a representative-cell check and explicit incomplete states.
+Cash-flow balance deltas remain a draft until noncash movements and FX are sourced
+and reconciled; an unexplained residual must never be relabeled as verified FX.
